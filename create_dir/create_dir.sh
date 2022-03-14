@@ -11,7 +11,7 @@ function main() {
 
     while read line
     do
-        mkdir -p ${./line} || fatal_error
+        mkdir -p ${line} || fatal_error
         echo "  ${line}"
     done < ${INPUT_FILE}
 
